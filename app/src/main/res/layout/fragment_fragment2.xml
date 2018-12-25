@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Fragment2">
+<AbsoluteLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="48dp"
+        android:layout_y="105dp"
+        android:text="開始"></Button>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="244dp"
+        android:layout_y="100dp"
+        android:text="暫停"></Button>
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/textView3"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="5dp"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="254dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_x="250dp"
+        android:layout_y="5dp"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="267dp"
+        tools:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="135dp"
+        android:layout_y="165dp"
+        android:text="TextView"
+        android:textSize="60sp"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="401dp"
+        tools:textSize="60sp" />
+
+    <Button
+        android:id="@+id/start24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="48dp"
+        android:layout_y="250dp"
+        android:text="24秒"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <Button
+        android:id="@+id/start14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="244dp"
+        android:layout_y="250dp"
+        android:text="14秒"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="157dp" />
+</AbsoluteLayout>
