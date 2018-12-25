@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -123,9 +124,9 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
                     m--;
                     s=59;
                     message.what=1;
-                    if(m==0)
+                    if(m=-1)
                     {
-                        m=8;
+                        m=7;
                         s=59;
                         flagstrat=false;
                         message.what=3;
