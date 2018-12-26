@@ -19,5 +19,7 @@ public class MyDBHelper extends  SQLiteOpenHelper {
                           int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS myTable");
         onCreate(db);
+        
+        
     }
 }
