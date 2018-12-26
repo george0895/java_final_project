@@ -25,7 +25,7 @@ import java.util.TimerTask;
 public class Fragment2 extends Fragment implements View.OnClickListener{
 
     private Button startButton,start24;
-    private Button stopButton,start14;
+    private Button stopButton,start14,setzero;
     private TextView text,hour,min,sec,sec24;
     private boolean flag_24=false;
     private int m=7,s=60,seccount=240;
@@ -40,10 +40,12 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
         stopButton = (Button) rootView.findViewById(R.id.stopButton);
         start24 = (Button)rootView.findViewById(R.id.start24);
         start14 = (Button)rootView.findViewById(R.id.start14);
+        setzero = (Button)rootView.findViewById(R.id.button);
         startButton.setOnClickListener(this);
         stopButton.setOnClickListener(this);
         start24.setOnClickListener(this);
         start14.setOnClickListener(this);
+        setzero.setOnClickListener(this);
         min = (TextView)rootView.findViewById(R.id.textView3);
         sec = (TextView)rootView.findViewById(R.id.textView4);
         sec24 = (TextView)rootView.findViewById(R.id.textView5);
@@ -69,14 +71,18 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
                 case R.id.start14:
                     seccount=140;
                     break;
+                case R.id.stopButton:
+                    flagstrat=false;
+                    break;
+                case R.id.button:
+                    flagstrat=false;
+                    m=7;
+                    s=59;
+                    Message message = new Message();
+                    message.what=1;
+                    handler.sendMessage(message);
+                    break;
             }
-    };
-
-    private Button.OnClickListener stopClickListener = new Button.OnClickListener() {
-        public void onClick(View arg0) {
-            flagstrat=false;
-            flag_24=true;
-        }
     };
 
 
@@ -124,7 +130,7 @@ public class Fragment2 extends Fragment implements View.OnClickListener{
                     m--;
                     s=59;
                     message.what=1;
-                    if(m=-1)
+                    if(m==-1)
                     {
                         m=7;
                         s=59;

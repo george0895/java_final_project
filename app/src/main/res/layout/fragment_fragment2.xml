@@ -19,8 +19,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_x="244dp"
-        android:layout_y="100dp"
+        android:layout_y="105dp"
         android:text="暫停"></Button>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="147dp"
+        android:layout_y="105dp"
+        android:text="歸零" />
 
     <TextView
         android:id="@+id/textView3"
