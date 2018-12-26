@@ -68,7 +68,10 @@ public class fragment3 extends Fragment {
                     items.add("蝺刻��:" + c.getString(0) + "\t\t\t ����:" + c.getString(1)+" VS "+c.getString(2)+"\t\t\t ��:"+c.getString(3)+" : "+c.getString(4));
                     c.moveToNext();
                 }
-
+       
+                
+                
+                
                 adapter.notifyDataSetChanged();
                 c.close();
             }
@@ -96,9 +99,7 @@ public class fragment3 extends Fragment {
                     }
                 }
             }
-            
-            
-            
+  
         });
         btn_update.setOnClickListener(new View.OnClickListener() {
             @Override
